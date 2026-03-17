@@ -15,8 +15,17 @@ No build step, no server, no dependencies.
 
 ## Repository conventions
 
-- Every change gets a clean git commit and is pushed to `origin/main` (GitHub: `feiwang10000-prog/neon-siege`).
-- Commit message format: one-line summary in imperative mood, optional body with bullet details, always ending with the `Co-Authored-By` trailer.
+**Commit and push after every meaningful unit of work.** Do not batch multiple features or fixes into one commit. The goal is that the GitHub remote always reflects the current state of the project so work is never lost and any commit can be reverted cleanly.
+
+When to commit:
+- After completing a feature or behaviour change
+- After fixing a bug
+- After any refactor, even small ones
+- Before starting a risky or experimental change
+
+Commit message format: one-line summary in imperative mood (e.g. `Add zigzag enemy type`), optional blank line + bullet body for non-obvious details, always ending with the `Co-Authored-By` trailer.
+
+Push to `origin/main` (GitHub: `feiwang10000-prog/neon-siege`) immediately after each commit.
 
 ## Architecture — shooter.html
 
